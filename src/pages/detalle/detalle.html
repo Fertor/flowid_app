@@ -1,0 +1,126 @@
+<!--
+  Generated template for the DetallePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Nombre de la Tarjeta</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content [ngClass]="{classname:true}">
+<img src="assets/imgs/img_tar.jpg" class="img_tar">
+<ion-card>
+		<ion-grid>
+		  <ion-row>
+		    <ion-col col-4>
+		    	<div >
+		    	<div><img src="assets/imgs/corazon.png" class="iconn"></div>
+		    	<div style="text-align: center;">{{save}}</div>
+		    	</div>
+		    </ion-col>
+		    <ion-col col-4>
+		    	<div >
+		    	<div><img src="assets/imgs/cerca.png"  class="iconn" (click)="openMapa()" ></div>
+		    	<div style="text-align: center;">Ubicacion</div>
+		    	</div>
+		    </ion-col>
+		   	<ion-col col-4>
+		   		<div (click)="presentPopover($event)" >
+		   		<div><img src="assets/imgs/compartir.png"  class="iconn"></div>
+		   		<div style="text-align: center;">Compartir</div>
+		   		</div>
+		   	</ion-col>
+		  </ion-row>
+		  <ion-row>
+			  <ion-col col-12>
+				  <ion-list>
+				  	<ion-item>
+					  <h2><strong>correo@correo.gmail.com</strong></h2>
+					  <p>Correo de la tarjeta</p>
+					</ion-item>
+					<ion-item>
+					  <h2><strong>+22 234 56 78</strong></h2>
+					  <p>Coorreo de la tarjeta</p>
+					</ion-item>
+					<ion-item>
+					  <h2><strong>tarjeta@tarjeta.com</strong></h2>
+					  <p>Pagina web</p>
+					</ion-item>
+				  </ion-list>
+			  </ion-col>		  
+		  </ion-row>
+		</ion-grid>
+	</ion-card>
+	<ion-card>
+		<ion-grid>
+			<ion-row>
+				<ion-col col-6>
+				<div style="float: left;">Novedades</div>
+			</ion-col>
+			<ion-col col-6>
+				<div style="float: right;">Ver más <ion-icon name="arrow-forward"></ion-icon></div>
+			</ion-col>
+			</ion-row>
+		  <ion-row>
+			  <ion-col col-12>
+				  <ion-list>
+				  	<ion-item (click)="openNovedad(1,1)" >
+					  <h2><strong>Titulo de la Novedad 1</strong></h2>
+					  <p>Subtitulo de la novedad 1</p>
+					   <ion-icon name="arrow-forward" item-end></ion-icon>
+					</ion-item>
+					<ion-item (click)="openNovedad(1,1)">
+					  <h2><strong>Titulo de la Novedad 2</strong></h2>
+					  <p>Subtitulo de la novedad 2</p>
+					   <ion-icon name="arrow-forward" item-end></ion-icon>
+					</ion-item>
+					<ion-item (click)="openNovedad(1,1)">
+					  <h2><strong>Titulo de la Novedad 3</strong></h2>
+					  <p>Subtitulo de la novedad 3</p>
+					   <ion-icon name="arrow-forward" item-end></ion-icon>
+					</ion-item>
+				  </ion-list>
+			  </ion-col>		  
+		  </ion-row>
+		</ion-grid>
+	</ion-card>
+	<ion-card>
+		<ion-grid>
+			<ion-row>
+				<ion-col col-12>
+				Información
+			</ion-col>
+			</ion-row>
+		  <ion-row>
+			  <ion-col col-12>
+				  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, magni. Unde voluptatem temporibus dicta! Vero cupiditate iusto reiciendis ducimus obcaecati voluptatem labore hic, fugit saepe cum nulla dignissimos alias non? </p>
+			  </ion-col>		  
+		  </ion-row>
+		</ion-grid>
+	</ion-card>
+	<ion-card>
+		<ion-grid>
+			<ion-row>
+				<ion-col col-12>
+				Galeria
+			</ion-col>
+			</ion-row>
+		  <ion-row>
+			  <ion-col col-4 *ngFor="let img of imgs">
+			  	
+				  <img src="{{img}}" class="thumb-img" (click)="openGaleria()" style="width: 100%; height: 200px">
+				
+			  </ion-col>
+		  </ion-row>
+		</ion-grid>
+	</ion-card>
+
+	
+
+</ion-content>

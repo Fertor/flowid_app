@@ -1,0 +1,34 @@
+<ion-content padding [ngClass]="{back:true}" >
+	<div class="row">
+		<div class="col col-90">
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<img src="assets/imgs/screen_login.png"  style="display: block; margin:auto; width: 60%">
+	</div>
+	</div>
+	<form (ngSubmit)="entrar()">
+	<div class="row">
+		<div class="col col-60" style="margin-top: 20%; text-align: center;">
+					<input class="input_text" placeholder="Users" type="text" name="user" [(ngModel)]="datos.users" >
+					<input class="input_text" placeholder="Password" type="password" name="pass" [(ngModel)]="datos.pass" >
+			</div>
+	</div>
+	<div class="row">
+		<div class="col col-60" style="margin-top:10%; text-align: center;">
+				<button class="btn" type="submit" >Iniciar Sesion</button>
+				<button class="btn" (click)="loginFB()" >Acceder con Facebook</button>
+		</div>	
+	</div>
+	</form>
+	<div class="row">
+		<div class="col col-60" style="margin-top:20%; text-align: center;">
+				<a href="#">¿Has olvidado tu contraseña?</a>
+				<br>
+				<br>
+				<a href="#">¿Quieres crear una cuenta gratuita?</a>
+			</div>		
+	</div>
+</ion-content>

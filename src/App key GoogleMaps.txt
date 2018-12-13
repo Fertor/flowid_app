@@ -1,0 +1,6 @@
+AIzaSyDfU0I1qxblStpCWaQ2ONuaUcyyjf5Lyl8 app key android
+AIzaSyCtm2d0kfH58q6-WRYaPGuXWYIeqYzL5nw app key ios
+
+ionic cordova plugin add cordova-plugin-googlemaps --variable API_KEY_FOR_ANDROID="AIzaSyDfU0I1qxblStpCWaQ2ONuaUcyyjf5Lyl8" --variable API_KEY_FOR_IOS="AIzaSyCtm2d0kfH58q6-WRYaPGuXWYIeqYzL5nw"
+
+ionic cordova plugin add cordova-plugin-facebook4 --variable APP_ID="419112871806474" --variable APP_NAME="LOGEAR"
